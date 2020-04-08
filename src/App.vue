@@ -16,21 +16,21 @@ export default {
 	},
 	methods: {
 		init: async function () {
-			// if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
-			// 	let constraints = {
-			// 		video: {
-			// 			width: { min: 1280 },
-			// 			height: { min: 720 }
-			// 		},
-			// 	};
+			 if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+			 	let constraints = {
+			 		video: {
+						width: { min: 1280 },
+						height: { min: 720 }
+			 		},
+			 	};
 
-			// 	const stream = await navigator.mediaDevices.getUserMedia(constraints);
+			 	const stream = await navigator.mediaDevices.getUserMedia(constraints);
 
-			// 	const video = document.querySelector('video');
-			// }
+			 	const video = document.querySelector('video');
+			 }
 		},
 		getDevices: async function () {
-			// const devices = await navigator.mediaDevices.enumerateDevices();
+			 const devices = await navigator.mediaDevices.enumerateDevices();
 		}
 	},
 	beforeMount: function () {
